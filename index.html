@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Landing page for online courses" />
+    <meta name="keywords" content="Landing, course, online, developer" />
+    <meta name="author" content="Marcin Sudoł" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Online course</title>
+  </head>
+
+  <body>
+    <!-- HEADER WITH NAVIGATION -->
+    <header id="header">
+      <figure id="logo">
+        <img
+          id="header-img"
+          src="https://img.icons8.com/plasticine/100/000000/workstation.png"
+          alt="Logo"
+        />
+      </figure>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features-anchor">Features</a></li>
+          <li><a class="nav-link" href="#video-anchor">Lesson example</a></li>
+          <li><a class="nav-link" href="#prices-anchor">Packages</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- EMAIL FORM -->
+      <section id="form-container">
+        <h2>
+          Be the first to find out about our promotions. Sign up for newsletter
+          today:
+        </h2>
+        <form id="form">
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button
+            id="submit"
+            type="submit"
+            formaction="https://www.freecodecamp.com/email-submit"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <!-- LIST OF FEATURES -->
+      <section id="features-container">
+        <div id="features-anchor" class="anchor"></div>
+
+        <ul id="features">
+          <li class="feature">
+            <svg
+              class="feature-img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"
+              />
+            </svg>
+            <div class="feature-desc">
+              <h4>Comprehensive video tutorials</h4>
+              <p>
+                Our course consists of 79 hours of videos. Videos fully cover
+                the topics of HTML, CSS and Java Script.
+              </p>
+            </div>
+          </li>
+          <li class="feature">
+            <svg
+              class="feature-img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+              />
+            </svg>
+            <div class="feature-desc">
+              <h4>Real life exercises</h4>
+              <p>
+                During the course you will have the oportunity to build 23
+                professional web applications, which you can then include in
+                your portfolio. Also, if you buy standard or premium package our
+                instructor will evaluate your applications, provide feedback and
+                help you if you get stuck.
+              </p>
+            </div>
+          </li>
+          <li class="feature">
+            <svg
+              class="feature-img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.463 14.861c-.241.705-.242.569 0 1.277l.037.223c0 .225-.111.441-.308.578-.628.435-.545.325-.781 1.033-.099.295-.385.495-.708.495h-.001c-.774-.003-.64-.044-1.265.395-.129.092-.283.138-.437.138s-.308-.046-.438-.138c-.625-.439-.49-.397-1.265-.395h-.002c-.322 0-.608-.2-.706-.495-.236-.709-.156-.599-.781-1.033-.197-.136-.308-.354-.308-.578l.037-.222c.242-.705.242-.569 0-1.277l-.037-.223c0-.225.111-.441.309-.578.625-.434.544-.324.781-1.033.098-.296.384-.495.706-.495h.002c.772.002.636.047 1.265-.395.129-.092.283-.138.437-.138s.308.046.438.137c.625.439.49.397 1.265.395h.001c.323 0 .609.199.708.495.236.708.153.598.781 1.033.196.137.308.354.308.578l-.038.223zm-1.713.639c0-.966-.783-1.75-1.75-1.75s-1.75.784-1.75 1.75.783 1.75 1.75 1.75 1.75-.784 1.75-1.75zm-3.067 3.966c-.383 0-.686-.037-.937-.107-.154 1.534-.68 2.685-1.746 3.796.428.053.975-.047 1.416-.28.159.318.326.715.384 1.125 1.005-1.149 1.633-2.527 1.867-4.035-.472-.091-.617-.248-.984-.499zm2.634 0c-.368.253-.521.41-.983.499.234 1.508.862 2.886 1.866 4.036.058-.41.225-.807.384-1.125.441.232.988.333 1.416.28-1.064-1.109-1.584-2.266-1.739-3.797-.252.069-.556.107-.944.107zm-11.317-19.466v21h5.154c.337-.535.528-1.104.602-1.841l.015-.159h-3.771v-17h16v17h-3.765l.016.156c.075.742.265 1.312.598 1.844h5.151v-21h-20zm16 5h-12v1h12v-1zm0 2h-12v1h12v-1zm0 2h-12v1h12v-1z"
+              />
+            </svg>
+            <div class="feature-desc">
+              <h4>Certification</h4>
+              <p>
+                After passing the final exam you will get a certificate proving
+                that you have all the skills needed to start your career as Web
+                Developer.
+              </p>
+            </div>
+          </li>
+          <li class="feature">
+            <svg
+              class="feature-img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13.473 7.196c-.425-.439-.401-1.127.035-1.552l4.461-4.326c.218-.211.498-.318.775-.318.282 0 .563.11.776.331l-6.047 5.865zm-7.334 11.021c-.092.089-.139.208-.139.327 0 .25.203.456.455.456.115 0 .229-.042.318-.128l.748-.729-.633-.654-.749.728zm8.212-6.482l-2.57 2.481c-.824.799-1.607 1.328-2.705 1.79.496-1.084 1.05-1.852 1.873-2.65l2.569-2.479-1.049-1.083-2.564 2.485c-1.378 1.336-2.08 2.63-2.73 4.437l1.133 1.169c1.824-.593 3.14-1.255 4.518-2.591l2.563-2.486-1.038-1.073zm7.878-7.243l-5.527 5.359-1.239-1.279 5.529-5.361c.824-.803 2.087.456 1.237 1.281zm-.643-3.036c-.572 0-1.156.209-1.64.678l-6.604 6.405 3.326 3.434 6.604-6.403c.485-.47.728-1.094.728-1.719 0-1.426-1.181-2.395-2.414-2.395zm-3.586 12.01v7.534h-16v-12h8.013l2.058-2h-12.071v16h20v-11.473l-2 1.939z"
+              />
+            </svg>
+            <div class="feature-desc">
+              <h4>Help in finding first job</h4>
+              <p>
+                When you buy our premium package, after completing the course we
+                will help you find the first job as Web Developer. Package
+                includes: help in building your CV and portfolio and training
+                for job interview.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- EMBEDDED VIDEO -->
+      <section id="video-container">
+        <div id="video-anchor" class="anchor"></div>
+
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/LXb3EKWsInQ"
+        ></iframe>
+      </section>
+
+      <!-- PURCHASE OPTIONS -->
+      <section id="prices-container">
+        <div id="prices-anchor" class="anchor"></div>
+
+        <ul id="price-options">
+          <li class="price-option">
+            <h4>Basic</h4>
+            <p class="price">$999</p>
+            <p>79 hours of video tutorials</p>
+            <p>23 real life exercises</p>
+            <p>Certification of completeness</p>
+            <div class="buy-button-container">
+              <button class="buy-button" type="submit">Select</button>
+            </div>
+          </li>
+
+          <li class="price-option">
+            <h4>Standard</h4>
+            <p class="price">$2699</p>
+            <p>79 hours of video tutorials</p>
+            <p>23 real life exercises</p>
+            <p>Certification of completeness</p>
+            <p>
+              <span class="advantage-1"
+                ><strong>Support in completing the exercises</strong></span
+              >
+            </p>
+            <div class="buy-button-container">
+              <button class="buy-button" type="submit">Select</button>
+            </div>
+          </li>
+
+          <li class="price-option">
+            <h4>Premium</h4>
+            <p class="price">$4199</p>
+            <p>79 hours of video tutorials</p>
+            <p>23 real life exercises</p>
+            <p>Certification of completeness</p>
+            <p>
+              <span class="advantage-1"
+                ><strong>Support in completing the exercises</strong></span
+              >
+            </p>
+            <p>
+              <span class="advantage-2"
+                ><strong>Help in finding the first job</strong></span
+              >
+            </p>
+            <div class="buy-button-container">
+              <button class="buy-button" type="submit">Select</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        <div id="footer-attr">
+          <a
+            href="https://icons8.com/icon/Q_GjggrIMm09/workstation"
+            target="_blank"
+            >Workstation icon by Icons8</a
+          >
+        </div>
+        <ul id="footer-nav">
+          <li class="footer-nav-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <p>Copyright 2020</p>
+      </footer>
+    </main>
+  </body>
+</html>
